@@ -8,8 +8,30 @@ public class SpeedTest {
 
     public static void main(final String[] args) {
         SpeedTest test = new SpeedTest();
+        SpeedTest.timer();
         test.withoutConcurrency();
         test.withConcurrency();
+    }
+
+    private static void timer() {
+        Thread timer = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int time = 0;
+
+                try {
+                    while (true) {
+                        System.out.print(time + " ");
+                        time++;
+                        Thread.sleep(1000);
+                    }
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        timer.setDaemon(true);
+        timer.start();
     }
 
     void withConcurrency() {
