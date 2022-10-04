@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d40c087e-daa4-4156-ae1b-1358daf4a062" name="Changes" comment="Daemon threads, race condition. Tested in class Sync">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ATM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ATM_Test.java" afterDir="false" />
+    <list default="true" id="d40c087e-daa4-4156-ae1b-1358daf4a062" name="Changes" comment="Race condition,Thread synchronization, Monitor, Speed test with monitors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Counter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sync.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sync.java" afterDir="false" />
@@ -45,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ATM_Test">
+  <component name="RunManager" selected="Application.Sync">
     <configuration name="ATM_Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ATM_Test" />
       <module name="Concurrency.main" />
@@ -120,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664817280657</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Race condition,Thread synchronization, Monitor, Speed test with monitors">
+      <created>1664906462480</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664906462480</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +142,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Concurrency in action! Comparing task speed with and without concurrency" />
     <MESSAGE value="Daemon threads, race condition. Tested in class Sync" />
-    <option name="LAST_COMMIT_MESSAGE" value="Daemon threads, race condition. Tested in class Sync" />
+    <MESSAGE value="Race condition,Thread synchronization, Monitor, Speed test with monitors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Race condition,Thread synchronization, Monitor, Speed test with monitors" />
   </component>
 </project>

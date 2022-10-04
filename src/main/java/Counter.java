@@ -1,43 +1,22 @@
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * Created by Mihran Galstyan
  * All rights reserved
  */
 public class Counter {
-    private final Object monitor1 = new Object();
-    private final Object monitor2 = new Object();
-
-    private int value;
-    private int value2;
+    private AtomicInteger value = new AtomicInteger();
+    // keyword volatile forbids cashing of variable. it doesn't synchronizing threads
 
     public int getValue() {
-        return value;
+        return value.intValue();
     }
 
     public void increment() {
-        synchronized (monitor1) {
-            value++;
-        }
+        value.getAndIncrement();
     }
 
     public void decrement() {
-        synchronized (monitor1) {
-            value--;
-        }
-    }
-
-    public int getValue2() {
-        return value2;
-    }
-
-    public void increment2() {
-        synchronized (monitor2) {
-            value2++;
-        }
-    }
-
-    public void decrement2() {
-        synchronized (monitor2) {
-            value2--;
-        }
+        value.getAndDecrement();
     }
 }
